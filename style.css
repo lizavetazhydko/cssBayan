@@ -22,3 +22,32 @@
   .accordion ul {
     list-style: none;
   }
+  .label-first{
+    display: block;
+    height: 100%;
+  }
+
+  .accordion input[type="radio"] {
+    display: none;
+  }
+  
+  .accordion .label-first .content {
+    cursor: pointer;
+  }
+
+  .accordion .label-second {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 3% 0;
+    border-top: 0.1em solid #ddd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .accordion input[type="radio"]:checked + .label-second {
+    color: #000;
+  }
