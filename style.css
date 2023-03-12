@@ -51,3 +51,31 @@
   .accordion input[type="radio"]:checked + .label-second {
     color: #000;
   }
+  .accordion .content {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  .accordion input[type="radio"]:checked + .label-second + .content {
+    max-height: 25rem;
+    transition: max-height .8s ease-in;
+  }
+  
+ 
+  .icon {
+    width: 5%;
+    height: 5%;
+    visibility: hidden;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+  }
+
+  .label-first input[type="radio"]:checked + .icon {
+    transform: rotate(45deg);
+  }
