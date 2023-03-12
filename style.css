@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F6F6ED;
+    color: blue;
+}
+
+.accordion {
+    margin: 6% auto;
+    width: 35%;
+  }
+
+  .accordion-title{
+    font-size: 3.5em;
+    font-weight: 700;
+    padding-bottom: 2%;
+    color: #000;
+    cursor: pointer;
+ }
+  .accordion ul {
+    list-style: none;
+  }
